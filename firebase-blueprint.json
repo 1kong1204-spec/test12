@@ -1,0 +1,48 @@
+{
+  "collections": {
+    "classroom_config": {
+      "documents": {
+        "default": {
+          "fields": {
+            "students": {
+              "type": "array",
+              "description": "List of students in the class, where each student has an id and name.",
+              "items": {
+                "type": "map",
+                "properties": {
+                  "id": { "type": "number" },
+                  "name": { "type": "string" }
+                }
+              }
+            },
+            "blockedSeats": {
+              "type": "array",
+              "description": "Boolean array of size 20 indicating if a seat is a blocked seat (X).",
+              "items": {
+                "type": "boolean"
+              }
+            },
+            "seating": {
+              "type": "array",
+              "description": "Array of size 20 indicating which student is in which seat. Holds student id (number) or null.",
+              "items": {
+                "type": "integer_or_null"
+              }
+            },
+            "fixedSeats": {
+              "type": "array",
+              "description": "Boolean array of size 20 indicating if a seat is fixed/locked (🔒).",
+              "items": {
+                "type": "boolean"
+              }
+            },
+            "updatedAt": {
+              "type": "timestamp",
+              "description": "Last updated timestamp."
+            }
+          }
+        }
+      }
+    }
+  }
+}
