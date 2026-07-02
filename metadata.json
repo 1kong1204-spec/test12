@@ -1,0 +1,6 @@
+{
+  "name": "자리 바꾸기 프로그램",
+  "description": "초보자 교사도 쉽게 사용할 수 있는 심플하고 직관적인 4x5 교실 자리 바꾸기 프로그램",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
